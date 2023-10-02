@@ -1,0 +1,45 @@
+/* ********** ********** ********** ********** ********** ********** ********** */
+/* ESTILOS "LAYOUT" */
+/* ********** ********** ********** ********** ********** ********** ********** */
+
+/* INSTRUCCIONES GENERALES. */
+.page {
+  display: grid;
+  grid-template-rows: 5rem 1fr;
+  grid-template-columns: 30rem 1fr;  
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden; 
+}
+
+.content {
+  position: fixed;
+  top: 0;
+  left: 30rem;  
+  margin: 1rem;
+  background: rgb(240, 250, 255);
+  border: 1px solid #cccccc;
+  border-radius: 0.25rem;
+  overflow-x: hidden;
+  overflow-y: hidden;  
+}
+
+/* INSTRUCCIONES GENERALES EN DISPOSITIVOS DE 750px O MENOS. */
+@media only screen and (max-width: 750px) {
+  .page {
+    display: grid;
+    grid-template-columns: 0 1fr;
+  }
+  .content {
+    top: 5rem;
+    left: 0;
+    margin: 0;
+    border: none;
+    border-top: 1px solid rgb(0, 155, 255);
+    border-radius: 0;    
+  }
+}
+
+/* ********** ********** ********** ********** ********** ********** ********** */
+/* ********** ********** ********** ********** ********** ********** ********** */

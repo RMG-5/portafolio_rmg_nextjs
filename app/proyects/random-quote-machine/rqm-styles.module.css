@@ -1,0 +1,171 @@
+/* ********** ********** ********** ********** ********** ********** ********** */
+/* ESTILOS "MAQUINA DE FRASES ALEATORIAS" */
+/* ********** ********** ********** ********** ********** ********** ********** */
+
+/* INSTRUCCIONES GENERALES. */
+.overallContainer {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 2rem);
+  width: calc(100vw - 32rem);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.title {
+  margin: 1rem 3rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.rmg {
+  margin: 1rem;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 5rem;
+  left: 2rem;
+  width: 40rem;
+  height: calc(40rem * 0.8);
+  background-size: contain;
+  overflow-y: hidden;
+}
+
+.quoteBox {
+  position: relative;
+  width: 50rem;
+  max-width: 90%;
+  margin: auto;
+  background: rgba(0, 155, 255, 0.8);
+  border-radius: 0.4rem;
+  box-shadow: 0.2rem 0.4rem 0.8rem rgba(0, 0, 0, 0.2),
+    0.2rem 0.4rem 0.8rem rgba(0, 0, 0, 0.4);
+}
+
+.text {
+  max-width: 50rem;
+  margin: 2rem 2rem 14.5rem;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.author {
+  position: absolute;
+  bottom: 7.5rem;
+  right: 2rem;
+  width: 50%;
+  padding: 0 0.5rem;
+  color: white;
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+.tweetQuote {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  height: 4rem;
+  padding: 0.8rem;
+  color: white;
+  font-size: 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.3),
+    0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.6);
+}
+
+.newQuote {
+  cursor: pointer;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  height: 4rem;
+  padding: 0.85rem 2rem;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.3),
+    0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.6);
+}
+
+.tweetQuote:hover,
+.newQuote:hover {
+  opacity: 0.75;
+}
+
+.tweetQuote:active,
+.newQuote:active {
+  opacity: 1;
+  box-shadow: 0.05rem 0.1rem 0.2rem rgba(0, 0, 0, 0.4),
+    0.05rem 0.1rem 0.2rem rgba(0, 0, 0, 0.8);
+}
+
+.overallContainer::-webkit-scrollbar {
+  height: 1rem;
+  width: 1rem;
+  background-color: rgb(225, 225, 225);
+  border: 0.1rem solid rgb(240, 250, 255);  
+}
+
+/* INSTRUCCIONES EN DISPOSITIVOS DE 920px O MENOS. */
+@media only screen and (max-width: 920px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .rmg {
+    font-size: 1.25rem;
+  }
+  .text {
+    margin: 2rem 2rem 12.5rem;
+    font-size: 1.75rem;
+  }
+  .author {
+    width: 75%;
+    font-size: 1.25rem;    
+  }
+  .newQuote {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* INSTRUCCIONES EN DISPOSITIVOS DE 760px O MENOS. */
+@media only screen and (max-width: 760px) {
+  .backgroundImage {
+    width: calc(100vw - 36rem);
+    height: calc((100vw - 36rem) * 0.8);
+  }
+}
+
+/* INSTRUCCIONES EN DISPOSITIVOS DE 750px O MENOS. */
+@media only screen and (max-width: 750px) {
+  .overallContainer {
+    height: calc(100vh - 5rem);
+    width: 100vw;
+  }
+  .backgroundImage {
+    width: 40rem;
+    height: calc(40rem * 0.8);
+  }
+  .quoteBox {
+    width: 40rem;
+  }
+}
+
+/* INSTRUCCIONES EN DISPOSITIVOS DE 440px O MENOS. */
+@media only screen and (max-width: 440px) {
+  .backgroundImage {
+    top: 8rem;
+    width: calc(100vw - 4rem);
+    height: calc((100vw - 4rem) * 0.8);
+  }
+}
+
+/* ********** ********** ********** ********** ********** ********** ********** */
+/* ********** ********** ********** ********** ********** ********** ********** */

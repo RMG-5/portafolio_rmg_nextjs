@@ -1,0 +1,21 @@
+/* ********** ********** ********** ********** ********** ********** ********** */
+/* ESTILOS "LOGO" */
+/* ********** ********** ********** ********** ********** ********** ********** */
+
+/* INSTRUCCIONES GENERALES. */
+.logo {
+  padding: 1rem 3rem;
+  background: rgb(240, 250, 255);
+  border-right: 1px solid #cccccc;
+}
+
+/* INSTRUCCIONES EN DISPOSITIVOS DE 750px O MENOS. */
+@media only screen and (max-width: 750px) {
+  .logo {
+    padding: 1rem;
+    border-right: none;
+  }
+}
+
+/* ********** ********** ********** ********** ********** ********** ********** */
+/* ********** ********** ********** ********** ********** ********** ********** */

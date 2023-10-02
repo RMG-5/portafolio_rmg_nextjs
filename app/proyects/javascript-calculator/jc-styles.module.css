@@ -1,0 +1,166 @@
+/* ********** ********** ********** ********** ********** ********** ********** */
+/* ESTILOS "CALCULADORA JAVASCRIPT" */
+/* ********** ********** ********** ********** ********** ********** ********** */
+
+/* INSTRUCCIONES GENERALES. */
+.overallContainer {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 2rem);
+  width: calc(100vw - 32rem);
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.title {
+  margin: 1rem 3rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.rmg {
+  margin: 1rem;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.calculator {
+  display: grid;
+  grid-template-rows: 30% 70%;
+  grid-row-gap: 1vh;
+  height: 500px;
+  min-height: 250px;
+  max-height: 90vh;
+  width: 400px;
+  min-width: 320px;
+  max-width: 95%;
+  margin: auto;
+  padding: 1rem;
+}
+
+.formulaDisplayContainer {
+  display: grid;
+  grid-template-rows: 60% 40%;
+  border-radius: 1vh;
+  box-shadow: 0.3vh 0.3vh 0.3vh rgba(0, 0, 0, 0.75);
+}
+
+.formula,
+.display {
+  padding: 1vh;
+  background: #ffffff;
+  border: none;
+  text-align: right;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.formula {
+  font-size: max(2vh, 1.75rem);
+  color: rgb(0, 105, 255);
+  border-radius: 1vh 1vh 0 0;
+}
+
+.display {
+  font-size: max(3vh, 2.5rem);
+  color: #111111;
+  border-radius: 0 0 1vh 1vh;
+}
+
+.buttonContainer {
+  display: grid;
+  grid-template-columns: 59% repeat(2, 1fr);
+  grid-column-gap: 1vh;
+}
+
+.numbersContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 1vh;
+  grid-row-gap: 1vh;
+}
+
+.operatorsContainer {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-row-gap: 1vh;
+}
+
+.resetResultContainer {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 1vh;
+}
+
+.numbers,
+.operators,
+.resetResult {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+  font-size: max(4vh, 2rem);
+  border-radius: 1vh;
+  box-shadow: 0.3vh 0.3vh 0.3vh rgba(0, 0, 0, 0.75);
+}
+
+.numbers {
+  color: #eeeeee;
+  background: #111111;
+}
+
+.operators {
+  color: #eeeeee;
+  background: #555555;
+}
+
+.resetResult {
+  color: #111111;
+  background: #ffffff;
+}
+
+.overallContainer::-webkit-scrollbar {
+  height: 1rem;
+  width: 1rem;
+  background-color: rgb(225, 225, 225);
+  border: 0.1rem solid rgb(240, 250, 255);  
+}
+
+.formula::-webkit-scrollbar,
+.display::-webkit-scrollbar {
+  height: 0.8rem;
+  width: 0.8rem;
+  background-color: #eeeeee;
+  border: none; 
+}
+
+/* INSTRUCCIONES GENERALES EN DISPOSITIVOS DE 920px O MENOS. */
+@media only screen and (max-width: 920px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .rmg {
+    font-size: 1.25rem;
+  }
+}
+
+/* INSTRUCCIONES GENERALES EN DISPOSITIVOS DE 750px O MENOS. */
+@media only screen and (max-width: 750px) {
+  .overallContainer {
+    height: calc(100vh - 5rem);
+    width: 100vw;
+  }
+}
+
+/* INSTRUCCIONES GENERALES EN DISPOSITIVOS DE 500px O MENOS. */
+@media only screen and (max-height: 500px) {
+  .calculator {
+    grid-template-rows: 40% 60%;
+  }
+}
+
+/* ********** ********** ********** ********** ********** ********** ********** */
+/* ********** ********** ********** ********** ********** ********** ********** */
