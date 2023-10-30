@@ -59,7 +59,9 @@ const RoutesList = ({ toggle }) => {
 export default function Topbar({ isOpen, toggle }) {
   return (
     <div className={styles.topbar}>
-      <Logo />
+      <div className={styles.logo}>
+        <Logo />
+      </div>
       <div className={styles.span}></div>
       <Burger isOpen={isOpen} toggle={toggle} />
       <div

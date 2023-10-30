@@ -10,6 +10,7 @@ import ActiveLink from "./active-link.js";
 import styles from "./navbar-styles.module.css";
 import { ROUTES } from "./routes-list.js";
 import Footer from "./footer.js";
+import Logo from "./logo.js";
 
 // Genera la lista de enlaces de una sección de "ROUTES".
 const Route = ({ proyects }) => {
@@ -55,6 +56,9 @@ const RoutesList = () => {
 export default function Navbar() {
   return (
     <div className={styles.sidemenu}>
+      <div className={styles.logo}>
+        <Logo />
+      </div>
       <hr />
       <RoutesList />
       <hr />

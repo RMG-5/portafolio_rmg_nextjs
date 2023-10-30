@@ -142,8 +142,12 @@
   border: 0.1rem solid rgb(240, 250, 255);  
 }
 
-/* INSTRUCCIONES EN DISPOSITIVOS DE 920px O MENOS. */
-@media only screen and (max-width: 920px) {
+/* INSTRUCCIONES EN DISPOSITIVOS DE 916px O MENOS. */
+@media only screen and (max-width: 916px) {
+  .overallContainer {
+    height: calc(100vh - 5rem);
+    width: 100vw;
+  }
   .title {
     font-size: 2.5rem;
   }
@@ -191,18 +195,10 @@
   }
 }
 
-/* INSTRUCCIONES EN DISPOSITIVOS DE 750px O MENOS. */
-@media only screen and (max-width: 750px) {
-  .overallContainer {
-    height: calc(100vh - 5rem);
-    width: 100vw;
-  }
-}
-
-/* INSTRUCCIONES EN PANTALLAS CON ORIENTACION landscape. PEQUEÑAS */
+/* INSTRUCCIONES EN PANTALLAS CON ORIENTACION landscape DE 800px O MENOS. */
 @media only screen and (orientation: landscape) {
-  @media only screen and (max-width: 749px) {
-    @media only screen and (max-height: 500px) {
+  @media only screen and (max-width: 800px) {
+    @media only screen and (max-height: 600px) {
       .clock {
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: repeat(4, 1fr);

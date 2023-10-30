@@ -5,7 +5,6 @@
 /* INSTRUCCIONES GENERALES. */
 .page {
   display: grid;
-  grid-template-rows: 5rem 1fr;
   grid-template-columns: 30rem 1fr;  
   height: 100vh;
   width: 100vw;
@@ -25,11 +24,10 @@
   overflow-y: hidden;  
 }
 
-/* INSTRUCCIONES GENERALES EN DISPOSITIVOS DE 750px O MENOS. */
-@media only screen and (max-width: 750px) {
+/* INSTRUCCIONES GENERALES EN DISPOSITIVOS DE 916px O MENOS. */
+@media only screen and (max-width: 916px) {
   .page {
-    display: grid;
-    grid-template-columns: 0 1fr;
+    grid-template-rows: 5rem 1fr;
   }
   .content {
     top: 5rem;

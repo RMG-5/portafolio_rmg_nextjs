@@ -161,34 +161,37 @@ input:checked + .slider:before {
   }
 }
 
-/* INSTRUCCIONES EN DISPOSITIVOS DE 920px O MENOS. */
-@media only screen and (max-width: 920px) {
+/* INSTRUCCIONES EN DISPOSITIVOS DE 916px O MENOS. */
+@media only screen and (max-width: 916px) {
+  .overallContainer {
+    height: calc(100vh - 5rem);
+    width: 100vw;
+    background-size: 35%, 35%;
+  }
   .title {
     font-size: 2.5rem;
   }
   .rmg {
     font-size: 1.25rem;
   }
-}
-
-/* INSTRUCCIONES EN DISPOSITIVOS DE 750px O MENOS. */
-@media only screen and (max-width: 750px) {
-  .overallContainer {
-    height: calc(100vh - 5rem);
-    width: 100vw;
-    background-size: 40%, 40%;
-  }
   .drumMachine {
     width: 400px;
   }
 }
 
+/* INSTRUCCIONES EN DISPOSITIVOS DE 650px O MENOS. */
+@media only screen and (max-width: 650px) {
+  .overallContainer {
+    background-size: 45%, 45%;
+  }
+}
+
 /* INSTRUCCIONES EN PANTALLAS CON ORIENTACION landscape. PEQUEÑAS */
 @media only screen and (orientation: landscape) {
-  @media only screen and (max-width: 920px) {
+  @media only screen and (max-width: 916px) {
     @media only screen and (max-height: 500px) {
       .overallContainer {
-        background-size: 30%, 30%;
+        background-size: 35%, 35%;
       }
     }
   }

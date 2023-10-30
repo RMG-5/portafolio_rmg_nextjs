@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <div>
       <p>RMG - Desarrollo WEB - 2023</p>
-      <p>Última actualización el 01/10/2023</p>
+      <p>Última actualización el 31/10/2023</p>
     </div>
   );
 }

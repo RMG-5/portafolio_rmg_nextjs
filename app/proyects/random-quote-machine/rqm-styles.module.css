@@ -113,8 +113,12 @@
   border: 0.1rem solid rgb(240, 250, 255);  
 }
 
-/* INSTRUCCIONES EN DISPOSITIVOS DE 920px O MENOS. */
-@media only screen and (max-width: 920px) {
+/* INSTRUCCIONES EN DISPOSITIVOS DE 916px O MENOS. */
+@media only screen and (max-width: 916px) {
+  .overallContainer {
+    height: calc(100vh - 5rem);
+    width: 100vw;
+  }
   .title {
     font-size: 2.5rem;
   }
@@ -132,29 +136,6 @@
   .newQuote {
     padding: 1rem 2rem;
     font-size: 1.5rem;
-  }
-}
-
-/* INSTRUCCIONES EN DISPOSITIVOS DE 760px O MENOS. */
-@media only screen and (max-width: 760px) {
-  .backgroundImage {
-    width: calc(100vw - 36rem);
-    height: calc((100vw - 36rem) * 0.8);
-  }
-}
-
-/* INSTRUCCIONES EN DISPOSITIVOS DE 750px O MENOS. */
-@media only screen and (max-width: 750px) {
-  .overallContainer {
-    height: calc(100vh - 5rem);
-    width: 100vw;
-  }
-  .backgroundImage {
-    width: 40rem;
-    height: calc(40rem * 0.8);
-  }
-  .quoteBox {
-    width: 40rem;
   }
 }
 

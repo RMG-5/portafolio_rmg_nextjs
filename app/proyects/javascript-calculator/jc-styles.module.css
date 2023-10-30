@@ -137,21 +137,17 @@
   border: none; 
 }
 
-/* INSTRUCCIONES GENERALES EN DISPOSITIVOS DE 920px O MENOS. */
-@media only screen and (max-width: 920px) {
+/* INSTRUCCIONES GENERALES EN DISPOSITIVOS DE 916px O MENOS. */
+@media only screen and (max-width: 916px) {
+  .overallContainer {
+    height: calc(100vh - 5rem);
+    width: 100vw;
+  }
   .title {
     font-size: 2.5rem;
   }
   .rmg {
     font-size: 1.25rem;
-  }
-}
-
-/* INSTRUCCIONES GENERALES EN DISPOSITIVOS DE 750px O MENOS. */
-@media only screen and (max-width: 750px) {
-  .overallContainer {
-    height: calc(100vh - 5rem);
-    width: 100vw;
   }
 }
 

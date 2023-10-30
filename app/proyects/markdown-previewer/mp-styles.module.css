@@ -103,11 +103,17 @@
   border: 0.1rem solid rgba(245, 245, 245, 1); 
 }
 
-/* INSTRUCCIONES EN DISPOSITIVOS DE 750px O MENOS. */
-@media only screen and (max-width: 750px) {
+/* INSTRUCCIONES EN DISPOSITIVOS DE 916px O MENOS. */
+@media only screen and (max-width: 916px) {
   .overallContainer {
     height: calc(100vh - 5rem);
     width: 100vw;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .rmg {
+    font-size: 1.25rem;
   }
   .markdown {
     height: calc(100vh - 17.5rem);
@@ -137,9 +143,9 @@
   }  
 }
 
-/* INSTRUCCIONES EN PANTALLAS CON ORIENTACION landscape DE 750px O MENOS. */
+/* INSTRUCCIONES EN PANTALLAS CON ORIENTACION landscape DE 916px O MENOS. */
 @media only screen and (orientation: landscape) {
-  @media only screen and (max-width: 749px) {
+  @media only screen and (max-width: 916px) {
     .markdown {
       height: calc(100vh - 17.5rem);
       width: calc(100vw - 4rem);

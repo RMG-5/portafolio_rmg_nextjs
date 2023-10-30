@@ -718,7 +718,7 @@ const Button = ({ id, className, handleClick, dataKey, dataValue }) => {
       : (nodeRef.current.style.backgroundColor = "#111111");
     nodeRef.current.style.boxShadow = "0.3vh 0.3vh 0.3vh rgba(0, 0, 0, 0.75)";
     nodeRef.current.style.transform = "scale(100%)";
-    nodeRef.current.style.fontSize = "4vh";
+    nodeRef.current.style.fontSize = "max(4vh, 2rem)";
   }, [id]);
 
   useEffect(() => {

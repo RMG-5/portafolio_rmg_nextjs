@@ -7,9 +7,9 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import styles from "./logo-styles.module.css";
 
 // Genera el logo.
+// Por comodidad sus estilos se definen en las barras de navegación.
 export default function Logo() {
   // Sirve para cambiar el estado del logo.
   const [isActive, setIsActive] = useState(false);
@@ -23,16 +23,14 @@ export default function Logo() {
   };
 
   return (
-    <div className={styles.logo}>
-      <Image
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        src={isActive ? "/img/logo_dw_azul.svg" : "/img/logo_dw_negro.svg"}
-        width={240}
-        height={30}
-        alt="Logo RMG Desarrollo WEB"
-      />
-    </div>
+    <Image
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      src={isActive ? "/img/logo_dw_azul.svg" : "/img/logo_dw_negro.svg"}
+      width={240}
+      height={30}
+      alt="Logo RMG Desarrollo WEB"
+    />
   );
 }
 
